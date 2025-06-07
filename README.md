@@ -1,86 +1,53 @@
-# Developer Portfolio Template 🚀
+# Personal Website – jun-uen0.github.io
 
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![Node.js](https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white) ![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+This is a React-based personal portfolio website hosted on GitHub Pages.
 
-## What is this?
+Originally forked from [yujisatojr/react-portfolio-template](https://github.com/yujisatojr/react-portfolio-template), this project serves as my personal professional profile page.
 
-This simple portfolio template is designed to showcase your past projects, career history, skill sets, and more.
+---
 
-View the [Demo](https://jun-uen0.github.io/react-portfolio-template/).
+## Development & Deployment Workflow
 
-**This template is free to use, and no attribution is required.** You can fork or download this repository to customize it for your own use. Please don't forget to leave a ⭐ if you like this portfolio!
+### Setup
 
-![screenshot](./src/assets//images/screenshot.png)
+```bash
+cd jun-uen0.github.io
+nvm use                # Use the appropriate Node version (via NVM)
+git checkout -b feature/your-feature-name
+npm install            # Install dependencies
+npm start              # Run local dev server
+```
 
-## Features
+### Update & Preview
 
-✅ Open source (free to use, no attribution required)  
-✅ Responsive design & mobile-friendly  
-✅ Supports both dark and light modes  
-✅ Highly customizable multi-component layout  
-✅ Built with modern technologies (React, TypeScript, JavaScript, and SCSS)  
+- Make changes to the components (e.g., `src/components`)
+- Preview at `http://localhost:3000`
 
-## Quick Setup
+### Publish to GitHub Pages
 
-1. Ensure you have [Node.js](https://nodejs.org/) installed. Check your installation by running:
+```bash
+npm run build
+npx gh-pages -d build
+```
 
-    ```bash
-    node -v
-    ```
+- This publishes the `build/` directory to the `gh-pages` branch.
+- Accessible at: [https://jun-uen0.github.io](https://jun-uen0.github.io)
 
-2. In the project directory, install dependencies:
+### Push Feature & Create Pull Request
 
-    ```bash
-    npm install
-    ```
+```bash
+git add .
+git commit -m "your message"
+git push origin feature/your-feature-name
+```
 
-3. Start the development server:
+- Open a Pull Request to `main`
+- Once approved, merge into `main`
 
-    ```bash
-    npm start
-    ```
+---
 
-4. Open [http://localhost:3000](http://localhost:3000) to view the app in the browser.
+## Credits
 
-5. Customize the template by navigating to the `/src/components` directory. Modify texts, pictures, and other information as needed.
+This site is proudly based on the beautiful [react-portfolio-template](https://github.com/yujisatojr/react-portfolio-template) by [@yujisatojr](https://github.com/yujisatojr).
 
-The page will reload if you make edits, and you will see any lint errors in the console.
-
-If you are interested in creating a mockup image like the ones from the personal projects section, I recommend [Genmoo](https://gemoo.com/tools/browser-mockup-generator/). This website lets you generate sleek looking browser mockups for free.
-
-## Deployment
-
-You can choose your preferred service (e.g., [Netlify](https://www.netlify.com/), [Render](https://render.com/), [Heroku](https://www.heroku.com/)) for deployment. One of the easiest ways to host this portfolio is using GitHub Pages. Follow the instructions below for a production deploy.
-
-1. **Set Up GitHub Repository**
-
-    Create a new repository on GitHub for your portfolio app.
-
-2. **Configure `package.json`**
-
-    Edit the following properties in your `package.json` file:
-
-    ```json
-    {
-        "homepage": "https://yourusername.github.io/your-repo-name",
-        "scripts": {
-            "predeploy": "npm run build",
-            "deploy": "gh-pages -d build",
-            ...
-        }
-    }
-    ```
-
-    Replace `yourusername` with your GitHub username and `your-repo-name` with the name of your GitHub repository.
-
-3. **Deploy to GitHub Pages**
-
-    Run the following command to deploy your app:
-
-    ```bash
-    npm run deploy
-    ```
-
-4. **Access Your Deployed App**
-
-    After successfully deploying, you can access your app at `https://yourusername.github.io/your-repo-name`.
+Special thanks to Yuji Sato for open-sourcing this elegant template under the MIT License, enabling developers around the world to showcase their work with style and simplicity.
