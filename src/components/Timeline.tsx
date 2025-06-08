@@ -20,7 +20,7 @@ function Timeline() {
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">FID Ltd. – Site Reliability Engineer</h3>
+            <h3 className="vertical-timeline-element-title">FID Ltd. – Project Lead / Site Reliability Engineer</h3>
             <h4 className="vertical-timeline-element-subtitle">Tokyo, Japan</h4>
             <p>
               Built Terraform and Ansible automation for AWS CRM infrastructure.<br/>
@@ -34,7 +34,7 @@ function Timeline() {
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Deloitte – Senior DevOps Engineer / Cloud Infrastructure Lead</h3>
+            <h3 className="vertical-timeline-element-title">Deloitte – Senior DevOps Engineer</h3>
             <h4 className="vertical-timeline-element-subtitle">Tokyo, Japan</h4>
             <p>
               Developed Apache Beam ETL pipelines on GCP Dataflow (60% faster).<br/>
@@ -48,7 +48,7 @@ function Timeline() {
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Deloitte – DevOps Engineer / Infrastructure Team Lead</h3>
+            <h3 className="vertical-timeline-element-title">Deloitte – Infrastructure Team Lead / DevOps Engineer</h3>
             <h4 className="vertical-timeline-element-subtitle">Tokyo, Japan</h4>
             <p>
               Managed six AWS environments with GitLab CI/CD.<br/>
@@ -62,7 +62,7 @@ function Timeline() {
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">StrategIT K.K. – Software Engineer / DevOps Lead</h3>
+            <h3 className="vertical-timeline-element-title">StrategIT K.K. – DevOps Lead / Software Engineer</h3>
             <h4 className="vertical-timeline-element-subtitle">Tokyo, Japan</h4>
             <p>
               Migrated legacy EC2 workloads to ECS Fargate (30% cost savings).<br/>
