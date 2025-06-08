@@ -16,50 +16,71 @@ function Timeline() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="2022 - present"
+            date="Mar 2025 - Present"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Technology Consultant</h3>
-            <h4 className="vertical-timeline-element-subtitle">Dallas, TX</h4>
-            <p>
-              Full-stack Web Development, GenAI/LLM, Project Management, Business Development
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2020 - 2022"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
-          >
-            <h3 className="vertical-timeline-element-title">Full Stack Engineer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
-            <p>
-              Frontend Development, Backend Development, User Experience, Team Leading
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2021 - 2021"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
-          >
-            <h3 className="vertical-timeline-element-title">Staff Engineer Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
-            <p>
-              Full-stack Development, API Development, User Experience
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2020 - 2020"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
-          >
-            <h3 className="vertical-timeline-element-title">Data Analyst Intern</h3>
+            <h3 className="vertical-timeline-element-title">FID Ltd. – Site Reliability Engineer</h3>
             <h4 className="vertical-timeline-element-subtitle">Tokyo, Japan</h4>
             <p>
-              Automation, Data Governance, Statistical Analysis
+              Built Terraform and Ansible automation for AWS CRM infrastructure.<br/>
+              Implemented Prometheus, Grafana, and Zabbix monitoring.<br/>
+              Collaborated with Philippine engineers to drive DevOps adoption.
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="Aug 2024 - Present"
+            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            icon={<FontAwesomeIcon icon={faBriefcase} />}
+          >
+            <h3 className="vertical-timeline-element-title">Deloitte – DevOps Engineer / Cloud Infrastructure Lead</h3>
+            <h4 className="vertical-timeline-element-subtitle">Tokyo, Japan</h4>
+            <p>
+              Developed Apache Beam ETL pipelines on GCP Dataflow (60% faster).<br/>
+              Terraformized infrastructure and automated metadata reports.<br/>
+              Defined Git-flow pipelines in Jira-managed sprints.
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="Feb 2023 - Jul 2024"
+            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            icon={<FontAwesomeIcon icon={faBriefcase} />}
+          >
+            <h3 className="vertical-timeline-element-title">Deloitte – DevOps Engineer / Infrastructure Team Lead</h3>
+            <h4 className="vertical-timeline-element-subtitle">Tokyo, Japan</h4>
+            <p>
+              Managed six AWS environments with GitLab CI/CD.<br/>
+              Automated Next.js and Sitecore deployments, saving 250+ hours monthly.<br/>
+              Coordinated with Australian team on releases and RCA.
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="Jan 2022 - Jan 2023"
+            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            icon={<FontAwesomeIcon icon={faBriefcase} />}
+          >
+            <h3 className="vertical-timeline-element-title">StrategIT K.K. – Software Engineer / DevOps Lead</h3>
+            <h4 className="vertical-timeline-element-subtitle">Tokyo, Japan</h4>
+            <p>
+              Migrated legacy EC2 workloads to ECS Fargate (30% cost savings).<br/>
+              Built GitLab CI/CD pipelines and CloudFormation IaC.<br/>
+              Led offshore team in Vietnam building Node.js + Firebase backend.
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="Aug 2020 - Oct 2021"
+            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            icon={<FontAwesomeIcon icon={faBriefcase} />}
+          >
+            <h3 className="vertical-timeline-element-title">mirai logistics Inc. – Project Owner / Systems Engineer</h3>
+            <h4 className="vertical-timeline-element-subtitle">Tokyo, Japan</h4>
+            <p>
+              Planned and deployed logistics system on ECS and Firestore.<br/>
+              Managed a contracted engineer and built driver dashboards with Apps Script.
             </p>
           </VerticalTimelineElement>
         </VerticalTimeline>
