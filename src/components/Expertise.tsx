@@ -8,10 +8,9 @@ import '../assets/styles/Expertise.scss';
 
 const labelsFirst = [
     "Terraform",
-    "CloudFormation",
     "Ansible",
-    "AWS",
     "GCP",
+    "AWS",
     "Kubernetes",
     "Docker"
 ];
@@ -19,7 +18,6 @@ const labelsFirst = [
 const labelsSecond = [
     "GitLab CI/CD",
     "GitHub Actions",
-    "Git-flow",
     "Bash",
     "Python",
     "Nexus"
@@ -29,9 +27,7 @@ const labelsThird = [
     "Prometheus",
     "Grafana",
     "Zabbix",
-    "CloudWatch",
-    "ELK Stack",
-    "Datadog"
+    "CloudWatch"
 ];
 
 function Expertise() {
