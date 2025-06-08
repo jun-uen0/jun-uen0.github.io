@@ -4,7 +4,6 @@ import {
   Timeline,
   Expertise,
   Project,
-  Contact,
   Navigation,
   Footer,
 } from "./components";
@@ -31,10 +30,10 @@ function App() {
         <Navigation parentToChild={{mode}} modeChange={handleModeChange}/>
         <FadeIn transitionDuration={700}>
             <Main/>
+            {/* #TODO */}
             <Expertise/>
-            <Timeline/>
-            <Project/>
-            <Contact/>
+            {/* <Timeline/> */}
+            {/* <Project/> */}
         </FadeIn>
         <Footer />
     </div>
