@@ -34,7 +34,7 @@ function Timeline() {
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Deloitte – DevOps Engineer / Cloud Infrastructure Lead</h3>
+            <h3 className="vertical-timeline-element-title">Deloitte – Senior DevOps Engineer / Cloud Infrastructure Lead</h3>
             <h4 className="vertical-timeline-element-subtitle">Tokyo, Japan</h4>
             <p>
               Developed Apache Beam ETL pipelines on GCP Dataflow (60% faster).<br/>
