@@ -53,14 +53,27 @@ footer {
         font-size: 0.85em;
         color: rgba(255, 255, 255, 0.6);
         margin: 0;
+        white-space: nowrap;
         
         a {
             color: rgba(79, 195, 247, 0.9);
             text-decoration: none;
             transition: color 0.2s ease;
+            display: inline !important;
+            width: auto !important;
+            height: auto !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            border-radius: 0 !important;
+            background: none !important;
+            border: none !important;
             
             &:hover {
                 color: #4FC3F7;
+                background: none !important;
+                border: none !important;
+                transform: none !important;
+                box-shadow: none !important;
             }
         }
     }
@@ -112,6 +125,16 @@ footer {
                     box-shadow: none !important;
                 }
             }
+        }
+    }
+}
+
+// Responsive design for mobile devices
+@media screen and (max-width: 768px) {
+    footer {
+        p {
+            white-space: normal;
+            line-height: 1.4;
         }
     }
 }
