@@ -28,7 +28,7 @@ function Timeline() {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="Aug 2024 - Present"
+            date="Aug 2024 - Feb 2025"
             iconStyle={{ background: '#4FC3F7', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
