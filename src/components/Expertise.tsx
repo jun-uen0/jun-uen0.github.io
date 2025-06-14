@@ -34,11 +34,11 @@ function Expertise() {
     return (
     <div className="container" id="expertise">
         <div className="skills-container">
-            <h1>Expertise</h1>
+            <h1 className="text-gradient-blue-vibrant">Expertise</h1>
             <div className="skills-grid">
                 <div className="skill">
                     <FontAwesomeIcon icon={faAws} size="3x"/>
-                    <h3>Cloud Infrastructure & Automation</h3>
+                    <h3 className="text-gradient-blue">Cloud Infrastructure & Automation</h3>
                     <p>Designed and automated cloud environments on AWS and GCP using Terraform and CloudFormation, orchestrating Kubernetes workloads with Docker.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
@@ -50,7 +50,7 @@ function Expertise() {
 
                 <div className="skill">
                     <FontAwesomeIcon icon={faGitlab} size="3x"/>
-                    <h3>CI/CD & DevOps</h3>
+                    <h3 className="text-gradient-blue">CI/CD & DevOps</h3>
                     <p>Implemented robust GitLab CI/CD pipelines and GitHub Actions workflows, automating build and deployment processes with Bash and Python scripts.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
@@ -62,7 +62,7 @@ function Expertise() {
 
                 <div className="skill">
                     <FontAwesomeIcon icon={faChartLine} size="3x"/>
-                    <h3>Monitoring & Reliability</h3>
+                    <h3 className="text-gradient-blue">Monitoring & Reliability</h3>
                     <p>Established monitoring solutions with Prometheus, Grafana, Zabbix and CloudWatch to ensure system reliability and proactive alerting.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
