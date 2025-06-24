@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 body {
   margin: 0;
@@ -12,7 +12,7 @@ body {
 }
 
 code {
-  font-family: 'JetBrains Mono', source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: 'Courier New', monospace;
   font-size: 0.9rem;
   font-weight: 400;
 }
@@ -28,8 +28,8 @@ a {
 }
 
 a:hover {
-  color: #4FC3F7;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  color: #666666;
+  transition: color .15s ease-in-out;
 }
 
 p, a, h1, h2, h3, h4, h5, label, button {
@@ -39,94 +39,45 @@ p, a, h1, h2, h3, h4, h5, label, button {
 
 h1 {
   font-weight: 700;
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  line-height: 1.1;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  line-height: 1.2;
   letter-spacing: -0.02em;
 }
 
 h2 {
   font-weight: 600;
-  font-size: clamp(1.8rem, 3vw, 2.5rem);
-  line-height: 1.2;
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+  line-height: 1.3;
   letter-spacing: -0.01em;
 }
 
 h3 {
   font-weight: 600;
-  font-size: clamp(1.25rem, 2vw, 1.5rem);
-  line-height: 1.3;
+  font-size: clamp(1.1rem, 1.5vw, 1.25rem);
+  line-height: 1.4;
 }
 
 p {
   font-weight: 400;
-  font-size: clamp(1rem, 1.5vw, 1.125rem);
-  line-height: 1.7;
+  font-size: clamp(0.9rem, 1.2vw, 1rem);
+  line-height: 1.6;
   color: rgba(255, 255, 255, 0.8);
 }
 
-// Reusable blue gradient text effect
+// Simple text styles
 .text-gradient-blue {
-  // Fallback color for unsupported browsers
-  color: #007cf0;
+  color: white;
   
-  // Modern gradient effect
-  background: linear-gradient(90deg, #007cf0 0%, #00dfd8 100%);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-  background-clip: text;
-  
-  // Enhanced cross-browser support
-  @supports (-webkit-background-clip: text) {
-    color: transparent;
-  }
-  
-  // Firefox support
-  @-moz-document url-prefix() {
-    background: linear-gradient(90deg, #007cf0 0%, #00dfd8 100%);
-    background-clip: text;
-    -moz-text-fill-color: transparent;
-  }
-  
-  // Light mode override - change to black gradient for better readability
   .light-mode & {
-    background: linear-gradient(90deg, #000000 0%, #333333 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    
-    @supports not (-webkit-background-clip: text) {
-      color: #000000;
-    }
+    color: #000000;
   }
 }
 
-// Alternative vibrant blue gradient
 .text-gradient-blue-vibrant {
-  // Fallback color
-  color: #0066ff;
+  color: white;
   
-  // Vibrant gradient effect
-  background: linear-gradient(90deg, #0066ff 0%, #00b8ff 50%, #00f0ff 100%);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-  background-clip: text;
-  
-  @supports (-webkit-background-clip: text) {
-    color: transparent;
-  }
-  
-  @-moz-document url-prefix() {
-    background: linear-gradient(90deg, #0066ff 0%, #00b8ff 50%, #00f0ff 100%);
-    background-clip: text;
-    -moz-text-fill-color: transparent;
+  .light-mode & {
+    color: #000000;
   }
 }
 
@@ -156,10 +107,10 @@ p {
 }
 
 .text-accent {
-  color: #4FC3F7;
+  color: white;
   
   .light-mode & {
-    color: #0066cc !important;
+    color: #000000 !important;
   }
 }
 
@@ -180,8 +131,7 @@ p {
     transition: all 0.2s ease;
     
     &:hover {
-      background: rgba(79, 195, 247, 0.1);
-      transform: translateY(-1px);
+      background: rgba(255, 255, 255, 0.1);
     }
   }
 
@@ -190,8 +140,7 @@ p {
     transition: all 0.2s ease;
     
     &:hover {
-      transform: scale(1.1);
-      color: #2498cd;
+      color: #666666;
     }
   }
 }
@@ -204,7 +153,7 @@ p {
 }
 
 .container {
-  margin-top: 64px;
+  margin-top: 48px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -215,21 +164,6 @@ p {
 
 section {
   position: relative;
-  
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle at 80% 20%, rgba(79, 195, 247, 0.02) 0%, transparent 50%);
-    pointer-events: none;
-  }
-  
-  &:nth-child(even)::before {
-    background: radial-gradient(circle at 20% 80%, rgba(79, 195, 247, 0.02) 0%, transparent 50%);
-  }
 }
 
 .header-image {
@@ -252,7 +186,7 @@ section {
 }
 
 .items-container {
-  padding: 80px 10% 60px;
+  padding: 50px 10% 40px;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -261,7 +195,7 @@ section {
   
   h1 {
     text-align: center;
-    margin-bottom: 48px;
+    margin-bottom: 32px;
     position: relative;
     
     &::after {
@@ -272,7 +206,7 @@ section {
       transform: translateX(-50%);
       width: 80px;
       height: 3px;
-      background: linear-gradient(90deg, #4FC3F7 0%, rgba(79, 195, 247, 0.3) 100%);
+      background: rgba(255, 255, 255, 0.3);
       border-radius: 2px;
     }
   }
@@ -304,8 +238,8 @@ section {
   }
 
   a:hover {
-    color: #4FC3F7 !important;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    color: #666666 !important;
+    transition: color .15s ease-in-out;
   }
   
   .navigation-bar {
