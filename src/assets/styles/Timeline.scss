@@ -37,15 +37,15 @@
     left: 0;
     width: 50px !important;
     height: 50px !important;
-    background: white !important;
+    background: #000000 !important;
     border: 3px solid rgba(255, 255, 255, 0.1) !important;
     
     &:hover {
-        background: rgba(255, 255, 255, 0.8) !important;
+        background: #333333 !important;
     }
     
     svg {
-        color: #000000 !important;
+        color: white !important;
     }
 }
 
@@ -64,14 +64,14 @@
     font-size: 1.3rem !important;
     margin-bottom: 8px !important;
     
-    // Allow gradient classes to override the color, otherwise use white for dark mode
+    // Make headings black for better readability
     &:not(.text-gradient-blue):not(.text-gradient-blue-vibrant) {
-        color: white !important;
+        color: #000000 !important;
     }
 }
 
 .vertical-timeline-element h4 {
-    color: rgba(255, 255, 255, 0.9) !important;
+    color: #000000 !important;
     font-family: 'Inter', sans-serif !important;
     font-weight: 500 !important;
     font-size: 1rem !important;
@@ -79,12 +79,12 @@
 }
 
 .vertical-timeline-element span {
-    color: rgba(255, 255, 255, 0.9) !important;
+    color: #000000 !important;
     font-family: 'Inter', sans-serif !important;
 }
 
 .vertical-timeline-element .vertical-timeline-element-date {
-    color: rgba(255, 255, 255, 0.9) !important;
+    color: #000000 !important;
     font-family: 'Courier New', monospace !important;
     font-weight: 500 !important;
     font-size: 0.9rem !important;
